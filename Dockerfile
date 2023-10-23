@@ -23,6 +23,7 @@ RUN python3 -m pip install jupyter --break-system-packages
 
 # install jekyll and dependencies
 RUN gem install jekyll bundler
+RUN gem install classifier-reborn
 
 RUN mkdir /srv/jekyll
 

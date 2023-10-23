@@ -130,6 +130,14 @@
         <div class="periodical">
           {{ periodical | strip }}
         </div>
+<div class="col-sm-auto abbr">
+{% if entry.tags %}
+    {% assign tags_array = entry.tags | split: ',' %}
+    {%- for tag in tags_array -%}
+        <abbr class="badge" style="margin-right: 5px;">{{ tag | strip }}</abbr>
+    {%- endfor %}
+{% endif %}
+</div>
         <div class="periodical">
           {{ entry.note | strip }}
         </div>

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://stasaki.github.io/sitemap.xml
